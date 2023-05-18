@@ -185,6 +185,29 @@ footer ul li{
     border: 1px beige;
     border-radius: 5px;
 }
+.lista-amigos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.item-lista-amigos{
+    padding: 10px;
+    margin: 20px;
+    max-width: 400px;
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 15px;;
+}
+.img-amigos{
+    width: 50px;
+}
+@media(min-width: 375px){
+    .img-amigos{
+        width: 100px;
+    }
+}
+
 @media(min-width: 576px){
     .logo{
         border: solid 0px black;
@@ -236,6 +259,7 @@ footer ul li{
         margin: 5vh;
         border-radius: 7px;
     }
+    
 }
 @media(min-width: 730px){
     .perfil_imagen{
