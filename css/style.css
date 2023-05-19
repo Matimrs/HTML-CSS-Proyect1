@@ -56,7 +56,6 @@ body{
     align-content: center;
 }
 #grid-contenedor-perfil{
-    border: 1px solid black;
     border-radius: 15px;
     padding: 30px;
 }
@@ -89,7 +88,6 @@ div#nivel1{
 #editar a:active{
     text-decoration: underline;
 }
-
 main{
     padding-top: 1vh;
 }
@@ -185,6 +183,20 @@ footer ul li{
     border: 1px beige;
     border-radius: 5px;
 }
+.buscador-amigos{
+    padding: 0px auto;
+}
+.buscador-amigos div{
+    max-width: 400px;
+    margin-top: 1rem;
+    border:1px solid rgb(175, 194, 167);
+    border-radius: 5px;
+}
+.btn-outline-secondary:hover {
+    color: beige;
+    background-color: rgb(175, 194, 167);
+    border-color: rgb(175, 194, 167);
+}
 .lista-amigos{
     display: flex;
     flex-direction: column;
@@ -196,11 +208,14 @@ footer ul li{
     margin: 20px;
     max-width: 400px;
     width: 50%;
-    border: 1px solid black;
-    border-radius: 15px;;
+    border: 1px solid rgb(83, 155, 54);
+    border-radius: 15px;
+    background-color: rgb(198, 245, 180);
 }
 .img-amigos{
     width: 50px;
+    background-color: beige;
+    border-radius: 100%;
 }
 @media(min-width: 375px){
     .img-amigos{
