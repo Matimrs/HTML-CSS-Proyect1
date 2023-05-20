@@ -96,6 +96,7 @@ main{
 }
 h1{
     font-size: 3rem;
+    font-weight: bold;
 }
 .texto_centrado, .subir{
     text-align: center;
@@ -208,7 +209,7 @@ footer ul li{
     margin: 20px;
     max-width: 400px;
     width: 50%;
-    border: 1px solid rgb(83, 155, 54);
+    box-shadow: 1px 1px 4px rgb(83, 155, 54);
     border-radius: 15px;
     background-color: rgb(198, 245, 180);
 }
@@ -222,7 +223,43 @@ footer ul li{
         width: 100px;
     }
 }
-
+.item-ajustes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item-ajustes div{
+    background-color: rgb(198, 245, 180) ;
+    padding: 0 20px 20px 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 4px rgb(83, 155, 54);
+    border-radius: 2rem;
+}
+.ajustes-perfil img{
+    margin: 0 auto;
+    width: 100px;
+    background-color: beige;
+    border-radius: 100%;
+ }
+ .ajustes-perfil h3{
+    margin: 20px;
+ }
+ .ajustes-perfil button{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: rgb(83, 155, 54);
+    color: beige;
+    border: none;
+    border-radius: .25rem;
+ }
+.ajustes-perfil input{
+    border-radius: .25rem;
+    border: 1px solid rgb(83, 155, 54);
+ }
 @media(min-width: 576px){
     .logo{
         border: solid 0px black;
