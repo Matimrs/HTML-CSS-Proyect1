@@ -139,6 +139,7 @@ h1{
     width: 30px;
     height: 30px;
     border-radius: 7px;
+    background-color: beige;
 }
 footer{
     text-align: center;
@@ -220,7 +221,7 @@ footer ul li{
 }
 @media(min-width: 375px){
     .img-amigos{
-        width: 100px;
+        width: 90px;
     }
 }
 .item-ajustes{
@@ -229,10 +230,10 @@ footer ul li{
     justify-content: center;
     align-items: center;
 }
-.item-ajustes div{
+.ajustes-perfil, .ajustes-cuenta{
     background-color: rgb(198, 245, 180) ;
-    padding: 0 20px 20px 20px;
-    width: 50%;
+    padding: 0 10px 10px 10px;
+    width: 90%;
     display: flex;
     flex-direction: column;
     box-shadow: 1px 1px 4px rgb(83, 155, 54);
@@ -244,22 +245,59 @@ footer ul li{
     background-color: beige;
     border-radius: 100%;
  }
- .ajustes-perfil h3{
-    margin: 20px;
- }
+
+
  .ajustes-perfil button{
     width: 50%;
     margin: 0 auto;
     margin-top: 20px;
     background-color: rgb(83, 155, 54);
     color: beige;
+    box-shadow: 1px 1px 4px rgb(83, 155, 54);
     border: none;
     border-radius: .25rem;
  }
 .ajustes-perfil input{
     border-radius: .25rem;
     border: 1px solid rgb(83, 155, 54);
+    padding-left: 10px;
  }
+ .ajustes-cuenta button{
+    width: 50%;
+    margin: 0 auto;
+    background-color: rgb(83, 155, 54);
+    color: beige;
+    box-shadow: 1px 1px 4px rgb(83, 155, 54);
+    border: none;
+    border-radius: .25rem;
+ }
+ .ajustes-cuenta input{
+    border-radius: .25rem;
+    border: 1px solid rgb(83, 155, 54);
+    padding-left: 10px;
+ }
+ .ajustes-cuenta-nueva-cuenta{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+ }
+ .ajustes-cuenta-nueva-cuenta button{
+    min-width: 85px;
+    width: 15%;
+ }
+ #email-cuenta-nueva, #contraseña-cuenta-nueva{
+    width: 40%;
+ }
+ 
+@media (min-width: 760px) {
+    .ajustes-perfil, .ajustes-cuenta{
+        width: 50%;
+        padding: 0 20px 20px 20px;
+    }
+}
+
 @media(min-width: 576px){
     .logo{
         border: solid 0px black;
@@ -269,6 +307,7 @@ footer ul li{
         height: 50px;
     }
     .barra_navegacion{
+        padding-left: 0 10px;
         z-index: 100;
         background-color: beige;
         text-align: center;
