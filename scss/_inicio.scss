@@ -98,6 +98,13 @@ h1{
     font-size: 3rem;
     font-weight: bold;
 }
+.jugar{
+    background-color: $verde-claro;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 4px $verde-medio;
+}
+
 .texto_centrado, .subir{
     text-align: center;
 }
@@ -109,6 +116,7 @@ h1{
     width: 10%;
     position: sticky;
     bottom: 0;
+    transition: 1s;
 }
 .orden_index{
     background-color: $verde-oscuro;
@@ -120,6 +128,9 @@ h1{
 .lista_principal{
     padding-inline-start: 0;
     list-style: none;
+    li,p{
+        text-align: justify;
+    }
 }
 .izquierda{
     position: absolute;
@@ -133,6 +144,10 @@ h1{
 }
 .link{
     text-decoration: none;
+    transition: 0.5s;
+}
+.link:hover{
+    transform:scale(1.2);
 }
 .contacto{
     margin: 0px 1vh;
@@ -214,6 +229,10 @@ footer{
     box-shadow: 1px 1px 4px $verde-medio;
     border-radius: 15px;
     background-color: $verde-claro;
+    transition: 0.5s;
+}
+.item-lista-amigos:hover{
+    transform:scale(1.1);
 }
 .img-amigos{
     width: 50px;
@@ -224,6 +243,9 @@ footer{
     .img-amigos{
         width: 90px;
     }
+}
+.editar-perfil:hover, .editar-perfil:active{
+    text-decoration: underline !important;
 }
 .item-ajustes{
     display: flex;

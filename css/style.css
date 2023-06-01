@@ -1,20 +1,17 @@
 @charset "UTF-8";
 * {
-  font-family: "Raleway", sans-serif;
-  color: black;
-}
+  font-family: 'Raleway', sans-serif;
+  color: black; }
 
 body {
-  background-color: beige;
-}
+  background-color: beige; }
 
 .logo {
   border: solid 0px black;
   border-radius: 100%;
-  box-shadow: 0.2vh 0.2vh 5px black;
+  box-shadow: .2vh .2vh 5px black;
   width: 30px;
-  height: 30px;
-}
+  height: 30px; }
 
 .barra_navegacion {
   z-index: 100;
@@ -27,14 +24,12 @@ body {
   align-items: center;
   justify-content: start;
   position: fixed;
-  top: 0;
-}
+  top: 0; }
 
 .barra_navegacion_divs {
   margin: auto;
   display: flex;
-  flex-direction: row;
-}
+  flex-direction: row; }
 
 .navegacion {
   padding-inline-start: 0;
@@ -42,313 +37,281 @@ body {
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-.navegacion li {
-  margin: 0px 1vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.navegacion li a {
-  background-color: rgb(198, 245, 180);
-  border-radius: 5px;
-  box-shadow: 1px 1px 4px rgb(83, 155, 54);
-  padding: 5px;
-}
+  justify-content: center; }
+  .navegacion li {
+    margin: 0px 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .navegacion li a {
+      background-color: #c6f5b4;
+      border-radius: 5px;
+      box-shadow: 1px 1px 4px #539b36;
+      padding: 5px; }
 
 .perfil {
   display: flex;
   justify-content: center;
-  align-content: center;
-}
+  align-content: center; }
 
 #grid-contenedor-perfil {
   border-radius: 15px;
-  padding: 30px;
-}
+  padding: 30px; }
 
 .perfil_imagen {
-  width: 5rem;
-}
+  width: 5rem; }
 
 div#nombre1 {
-  font-weight: 800;
-}
+  font-weight: 800; }
 
 div#email1 {
-  font-weight: 800;
-}
+  font-weight: 800; }
 
 div#nivel1 {
-  font-weight: 800;
-}
+  font-weight: 800; }
 
 #imgPerfil {
   display: flex;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 #editar {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: 800;
-}
-#editar a {
-  text-decoration: none;
-}
-#editar a:active {
-  text-decoration: underline;
-}
+  font-weight: 800; }
+  #editar a {
+    text-decoration: none; }
+  #editar a:active {
+    text-decoration: underline; }
 
 main {
-  padding-top: 1vh;
-}
+  padding-top: 1vh; }
 
 .section_principal, .div_principal {
-  margin-top: 12vh;
-}
+  margin-top: 12vh; }
 
 h1 {
   font-size: 3rem;
-  font-weight: bold;
-}
+  font-weight: bold; }
+
+.jugar {
+  background-color: #c6f5b4;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 1px 1px 4px #539b36; }
 
 .texto_centrado, .subir {
-  text-align: center;
-}
+  text-align: center; }
 
 .subir {
   min-width: 60px;
   margin: 0 auto;
-  background-color: rgb(198, 245, 180);
+  background-color: #c6f5b4;
   border-radius: 5px;
   width: 10%;
   position: sticky;
   bottom: 0;
-}
+  transition: 1s; }
 
 .orden_index {
-  background-color: rgb(175, 194, 167);
+  background-color: #afc2a7;
   border-radius: 20px;
   position: relative;
   margin-top: 20px;
-  padding: 7vh;
-}
+  padding: 7vh; }
 
 .lista_principal {
   padding-inline-start: 0;
-  list-style: none;
-}
+  list-style: none; }
+  .lista_principal li, .lista_principal p {
+    text-align: justify; }
 
 .izquierda {
   position: absolute;
   top: -2px;
-  left: 15px;
-}
+  left: 15px; }
 
 .derecha {
   position: absolute;
   top: -2px;
-  right: 15px;
-}
+  right: 15px; }
 
 .link {
   text-decoration: none;
-}
+  transition: 0.5s; }
+
+.link:hover {
+  transform: scale(1.2); }
 
 .contacto {
   margin: 0px 1vh;
   width: 30px;
   height: 30px;
   border-radius: 7px;
-  background-color: beige;
-}
+  background-color: beige; }
 
 footer {
   text-align: center;
-  width: 100%;
-}
-footer ul {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-inline-start: 0;
-}
-footer ul li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  width: 100%; }
+  footer ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline-start: 0; }
+    footer ul li {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
 
 .formulario_contacto {
-  padding: 20px;
-}
-.formulario_contacto div label {
-  font-weight: 800;
-}
+  padding: 20px; }
+  .formulario_contacto div label {
+    font-weight: 800; }
 
 #contacto_email {
-  margin-left: 35px !important;
-}
+  margin-left: 35px !important; }
 
 #contacto_nombre, #contacto_email {
-  border: 1px solid rgb(83, 155, 54);
+  border: 1px solid #539b36;
   width: 170px;
-  margin: 2vh;
-}
+  margin: 2vh; }
 
 #contacto_mensaje {
-  border: 1px solid rgb(83, 155, 54);
+  border: 1px solid #539b36;
   width: 100%;
   margin-top: 2vh;
-  height: 130px;
-}
+  height: 130px; }
 
 #contacto_enviar {
-  background-color: rgb(198, 245, 180);
-  box-shadow: 0.2vh 0.2vh 5px rgb(83, 155, 54);
+  background-color: #c6f5b4;
+  box-shadow: 0.2vh 0.2vh 5px #539b36;
   width: 100%;
   margin: 20px 0;
   border: 1px beige;
-  border-radius: 5px;
-}
+  border-radius: 5px; }
 
 .buscador-amigos {
-  padding: 0px auto;
-}
-.buscador-amigos div {
-  max-width: 400px;
-  margin-top: 1rem;
-  border: 1px solid rgb(175, 194, 167);
-  border-radius: 5px;
-}
+  padding: 0px auto; }
+  .buscador-amigos div {
+    max-width: 400px;
+    margin-top: 1rem;
+    border: 1px solid #afc2a7;
+    border-radius: 5px; }
 
 .btn-outline-secondary:hover {
   color: beige;
-  background-color: rgb(175, 194, 167);
-  border-color: rgb(175, 194, 167);
-}
+  background-color: #afc2a7;
+  border-color: #afc2a7; }
 
 .lista-amigos {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-}
+  justify-content: center; }
 
 .item-lista-amigos {
   padding: 10px;
   margin: 20px;
   max-width: 400px;
   width: 50%;
-  box-shadow: 1px 1px 4px rgb(83, 155, 54);
+  box-shadow: 1px 1px 4px #539b36;
   border-radius: 15px;
-  background-color: rgb(198, 245, 180);
-}
+  background-color: #c6f5b4;
+  transition: 0.5s; }
+
+.item-lista-amigos:hover {
+  transform: scale(1.1); }
 
 .img-amigos {
   width: 50px;
   background-color: beige;
-  border-radius: 100%;
-}
+  border-radius: 100%; }
 
 @media (min-width: 375px) {
   .img-amigos {
-    width: 90px;
-  }
-}
+    width: 90px; } }
+
+.editar-perfil:hover, .editar-perfil:active {
+  text-decoration: underline !important; }
+
 .item-ajustes {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 .ajustes-perfil, .ajustes-cuenta {
-  background-color: rgb(198, 245, 180);
+  background-color: #c6f5b4;
   padding: 0 10px 10px 10px;
   width: 90%;
   display: flex;
   flex-direction: column;
-  box-shadow: 1px 1px 4px rgb(83, 155, 54);
-  border-radius: 2rem;
-}
+  box-shadow: 1px 1px 4px #539b36;
+  border-radius: 2rem; }
 
 .ajustes-perfil img {
   margin: 0 auto;
   width: 100px;
   background-color: beige;
-  border-radius: 100%;
-}
+  border-radius: 100%; }
 
 .ajustes-perfil button {
   width: 50%;
   margin: 0 auto;
   margin-top: 20px;
-  background-color: rgb(83, 155, 54);
+  background-color: #539b36;
   color: beige;
-  box-shadow: 1px 1px 4px rgb(83, 155, 54);
+  box-shadow: 1px 1px 4px #539b36;
   border: none;
-  border-radius: 0.25rem;
-}
+  border-radius: .25rem; }
 
 .ajustes-perfil input {
-  border-radius: 0.25rem;
-  border: 1px solid rgb(83, 155, 54);
-  padding-left: 10px;
-}
+  border-radius: .25rem;
+  border: 1px solid #539b36;
+  padding-left: 10px; }
 
 .ajustes-cuenta button {
   width: 50%;
   margin: 0 auto;
-  background-color: rgb(83, 155, 54);
+  background-color: #539b36;
   color: beige;
-  box-shadow: 1px 1px 4px rgb(83, 155, 54);
+  box-shadow: 1px 1px 4px #539b36;
   border: none;
-  border-radius: 0.25rem;
-}
+  border-radius: .25rem; }
 
 .ajustes-cuenta input {
-  border-radius: 0.25rem;
-  border: 1px solid rgb(83, 155, 54);
-  padding-left: 10px;
-}
+  border-radius: .25rem;
+  border: 1px solid #539b36;
+  padding-left: 10px; }
 
 .ajustes-cuenta-nueva-cuenta {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 .ajustes-cuenta-nueva-cuenta button {
   min-width: 85px;
-  width: 15%;
-}
+  width: 15%; }
 
 #email-cuenta-nueva, #contraseña-cuenta-nueva {
-  width: 40%;
-}
+  width: 40%; }
 
 @media (min-width: 760px) {
   .ajustes-perfil, .ajustes-cuenta {
     width: 50%;
-    padding: 0 20px 20px 20px;
-  }
-}
+    padding: 0 20px 20px 20px; } }
+
 @media (min-width: 576px) {
   .logo {
     border: solid 0px black;
     border-radius: 100%;
-    box-shadow: 0.2vh 0.2vh 5px black;
+    box-shadow: .2vh .2vh 5px black;
     width: 50px;
-    height: 50px;
-  }
+    height: 50px; }
   .barra_navegacion {
     padding-left: 0 10px;
     z-index: 100;
@@ -361,75 +324,56 @@ footer ul li {
     align-items: center;
     justify-content: center;
     position: fixed;
-    top: 0;
-  }
+    top: 0; }
   .barra_navegacion_divs {
     width: 50%;
     display: flex;
-    flex-direction: row;
-  }
+    flex-direction: row; }
   .navegacion {
     width: 100%;
     list-style: none;
     display: flex;
     align-items: center;
-    justify-content: center;
-  }
-  .navegacion li {
-    margin: 0px auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .navegacion li a {
-    background-color: rgb(198, 245, 180);
-    border-radius: 5px;
-    box-shadow: 1px 1px 4px rgb(83, 155, 54);
-    padding: 5px;
-  }
+    justify-content: center; }
+    .navegacion li {
+      margin: 0px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .navegacion li a {
+        background-color: #c6f5b4;
+        border-radius: 5px;
+        box-shadow: 1px 1px 4px #539b36;
+        padding: 5px; }
   .contacto {
     width: 50px;
     height: 50px;
     margin: 5vh;
-    border-radius: 7px;
-  }
-}
+    border-radius: 7px; } }
+
 @media (min-width: 730px) {
   .perfil_imagen {
-    width: 9rem;
-  }
+    width: 9rem; }
   #grid-contenedor-perfil {
     display: grid;
-    grid-template-areas: "imagen imagen" "nombre1 nombre2" "email1 email2" "nivel1 nivel2" "editar editar";
+    grid-template-areas: "imagen imagen" "nombre1 nombre2" "email1 email2" "nivel1 nivel2" "editar editar";
     height: 50vh;
     width: 40%;
     align-items: center;
-    justify-items: center;
-  }
+    justify-items: center; }
   div#imgPerfil {
-    grid-area: imagen;
-  }
+    grid-area: imagen; }
   div#nombre1 {
-    grid-area: nombre1;
-  }
+    grid-area: nombre1; }
   div#nombre2 {
-    grid-area: nombre2;
-  }
+    grid-area: nombre2; }
   div#email1 {
-    grid-area: email1;
-  }
+    grid-area: email1; }
   div#email2 {
-    grid-area: email2;
-  }
+    grid-area: email2; }
   div#nivel1 {
-    grid-area: nivel1;
-  }
+    grid-area: nivel1; }
   div#nivel2 {
-    grid-area: nivel2;
-  }
+    grid-area: nivel2; }
   div#editar {
-    grid-area: editar;
-  }
-}
-
-/*# sourceMappingURL=style.css.map */
+    grid-area: editar; } }
