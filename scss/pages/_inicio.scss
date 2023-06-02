@@ -1,0 +1,43 @@
+.jugar{
+    background-color: $verde-claro;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 4px $verde-medio;
+}
+.texto_centrado, .subir{
+    text-align: center;
+}
+.subir{
+    min-width: 60px;
+    margin: 0 auto;
+    background-color: $verde-claro;
+    border-radius: 5px;
+    width: 10%;
+    position: sticky;
+    bottom: 0;
+    transition: 1s;
+}
+.orden_index{
+    background-color: $verde-oscuro;
+    border-radius: 20px;
+    position: relative;
+    margin-top: 20px;
+    padding: 7vh;
+}
+.lista_principal{
+    padding-inline-start: 0;
+    list-style: none;
+    li, p{
+        text-align: justify;
+    }
+}
+.izquierda{
+    position: absolute;
+    top: -2px;
+    left: 15px;
+}
+.derecha{
+    position: absolute;
+    top: -2px;
+    right: 15px;
+}

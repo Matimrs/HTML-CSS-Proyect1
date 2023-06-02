@@ -1,0 +1,28 @@
+.formulario_contacto{
+    padding: 20px;
+    div label{
+        font-weight: 800;
+    }
+}
+#contacto_email{
+   margin-left: 35px !important;
+}
+#contacto_nombre, #contacto_email{
+    border: 1px solid $verde-medio;
+    width: 170px;
+    margin: 2vh;
+}
+#contacto_mensaje{
+    border: 1px solid $verde-medio;
+    width: 100%;
+    margin-top: 2vh;
+    height: 130px;
+}
+#contacto_enviar{
+    background-color: $verde-claro;
+    box-shadow: .2vh .2vh 5px $verde-medio;
+    width: 100%;
+    margin: 20px 0;
+    border: 1px beige;
+    border-radius: 5px;
+}

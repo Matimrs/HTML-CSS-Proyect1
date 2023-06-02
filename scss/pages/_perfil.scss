@@ -1,0 +1,82 @@
+.perfil{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+#grid-contenedor-perfil{
+    border-radius: 15px;
+    padding: 30px;
+}
+.perfil_imagen{
+    width: 5rem;
+}
+div#nombre1{
+    font-weight: 800;
+}
+div#email1{
+    font-weight: 800;
+}
+div#nivel1{
+    font-weight: 800;
+}
+#imgPerfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#editar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    a{
+        text-decoration: none;
+        :active, :hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+@media(min-width: 730px){
+    .perfil_imagen{
+        width: 9rem;
+    }
+    #grid-contenedor-perfil{
+        display: grid;
+        grid-template-areas:
+        "imagen imagen"
+        "nombre1 nombre2"
+        "email1 email2"
+        "nivel1 nivel2"
+        "editar editar";
+        height: 50vh;
+        width: 40%;
+        align-items: center;
+        justify-items: center;
+       
+    }
+    div#imgPerfil{
+    grid-area: imagen;
+    }
+    div#nombre1{
+    grid-area: nombre1;
+    }
+    div#nombre2{
+    grid-area: nombre2;
+    }
+    div#email1{
+    grid-area: email1;
+    }
+    div#email2{
+    grid-area: email2;
+    }
+    div#nivel1{
+        grid-area: nivel1;
+    }
+    div#nivel2{
+        grid-area: nivel2;
+    }
+    div#editar{
+       grid-area: editar; 
+    }
+}

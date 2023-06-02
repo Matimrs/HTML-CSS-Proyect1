@@ -1,0 +1,80 @@
+.item-ajustes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ajustes-perfil{
+    background-color: $verde-claro ;
+    padding: 0 10px 10px 10px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 4px $verde-medio;
+    border-radius: 2rem;
+    img{
+        margin: 0 auto;
+        width: 100px;
+        background-color: beige;
+        border-radius: 100%;
+     }
+     button{
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 20px;
+        background-color: $verde-medio;
+        color: beige;
+        box-shadow: 1px 1px 4px $verde-medio;
+        border: none;
+        border-radius: .25rem;
+     }
+     input{
+        border-radius: .25rem;
+        border: 1px solid $verde-medio;
+        padding-left: 10px;
+     }
+}
+.ajustes-cuenta{
+    background-color: $verde-claro ;
+    padding: 0 10px 10px 10px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 4px $verde-medio;
+    border-radius: 2rem;
+    button{
+        width: 50%;
+        margin: 0 auto;
+        background-color: $verde-medio;
+        color: beige;
+        box-shadow: 1px 1px 4px $verde-medio;
+        border: none;
+        border-radius: .25rem;
+     }
+     input{
+        border-radius: .25rem;
+        border: 1px solid $verde-medio;
+        padding-left: 10px;
+     }
+}
+ .ajustes-cuenta-nueva-cuenta{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    button{
+        min-width: 85px;
+        width: 15%;
+     }
+ }
+ #email-cuenta-nueva, #contraseña-cuenta-nueva{
+    width: 40%;
+ }
+ 
+@media (min-width: 760px) {
+    .ajustes-perfil, .ajustes-cuenta{
+        width: 50%;
+        padding: 0 20px 20px 20px;
+    }
+}
