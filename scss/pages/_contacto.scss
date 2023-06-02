@@ -19,10 +19,10 @@
     height: 130px;
 }
 #contacto_enviar{
-    background-color: $verde-claro;
-    box-shadow: .2vh .2vh 5px $verde-medio;
     width: 100%;
-    margin: 20px 0;
-    border: 1px beige;
-    border-radius: 5px;
+    background-color: $verde-medio;
+    color: beige;
+    box-shadow: 1px 1px 4px $verde-medio;
+    border: none;
+    border-radius: .25rem;
 }

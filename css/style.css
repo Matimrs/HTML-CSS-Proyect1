@@ -2,6 +2,12 @@
 .link {
   text-decoration: none; }
 
+.botones {
+  transition: 0.5s; }
+
+.botones:hover {
+  transform: scale(1.1); }
+
 .contacto {
   margin: 0px 1vh;
   width: 30px;
@@ -209,7 +215,7 @@ footer {
   background-color: beige;
   border-radius: 100%; }
 
-@media (min-width: 375px) {
+@media (min-width: 350px) {
   .img-amigos {
     width: 90px; } }
 
@@ -236,12 +242,12 @@ footer {
   height: 130px; }
 
 #contacto_enviar {
-  background-color: #c6f5b4;
-  box-shadow: 0.2vh 0.2vh 5px #539b36;
   width: 100%;
-  margin: 20px 0;
-  border: 1px beige;
-  border-radius: 5px; }
+  background-color: #539b36;
+  color: beige;
+  box-shadow: 1px 1px 4px #539b36;
+  border: none;
+  border-radius: .25rem; }
 
 .jugar {
   background-color: #c6f5b4;
@@ -259,8 +265,7 @@ footer {
   border-radius: 5px;
   width: 10%;
   position: sticky;
-  bottom: 0;
-  transition: 1s; }
+  bottom: 0; }
 
 .orden_index {
   background-color: #afc2a7;
