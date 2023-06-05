@@ -250,10 +250,30 @@ footer {
   border-radius: .25rem; }
 
 .jugar {
+  min-width: 165px;
+  width: 20%;
+  margin: 0 auto;
   background-color: #c6f5b4;
-  padding: 10px;
-  border-radius: 15px;
+  padding: 5px 0;
+  border-radius: 5px;
   box-shadow: 1px 1px 4px #539b36; }
+  .jugar h2 {
+    margin: 0; }
+
+#jugar {
+  animation-name: un_efecto;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  animation-timing-function: ease;
+  animation-duration: 2s; }
+
+@keyframes un_efecto {
+  0% {
+    width: 300px; }
+  50% {
+    width: 165px; }
+  100% {
+    width: 300px; } }
 
 .texto_centrado, .subir {
   text-align: center; }
