@@ -6,7 +6,8 @@
   transition: 0.5s; }
 
 .botones:hover {
-  transform: scale(1.1); }
+  transform: scale(1.1);
+  cursor: pointer; }
 
 .contacto {
   margin: 0px 1vh;
@@ -195,7 +196,8 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  user-select: none; }
 
 .item-lista-amigos {
   padding: 10px;
