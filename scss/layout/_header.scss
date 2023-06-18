@@ -5,14 +5,17 @@
     width: 30px;
     height: 30px;
 }
+@mixin flex-align-center{
+    display: flex;
+    align-items: center;
+}
 .barra_navegacion{
     width: 100%;
     z-index: 100;
     background-color: beige;
     height: 50px;
     padding-top: 10px;
-    display: flex;
-    align-items: center;
+    @include flex-align-center;
     justify-content: space-between;
     position: fixed;
     top: 0;
@@ -21,27 +24,27 @@
 }
 .barra_navegacion_divs{
     margin: 0 1vh;
-    display: flex;
+    @include flex-align-center;
     justify-content: start;
-    align-items: center;
+}
+@mixin links{
+    background-color: $verde-claro;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px $verde-medio;
+    padding: 5px;
 }
 .navegacion{
     padding-inline-start: 0px;
     width: 100%;
     list-style: none;
-    display: flex;
-    align-items: center;
+    @include flex-align-center;
     justify-content: space-around;
     li{
-        display: flex;
-        align-items: center;
+        @include flex-align-center;
         justify-content: center;
         a{
             margin: 0 5px;
-            background-color: $verde-claro;
-            border-radius: 5px;
-            box-shadow: 1px 1px 4px $verde-medio;
-            padding: 5px;
+            @include links;
         }
     }
 }
@@ -61,23 +64,17 @@
     }
     .barra_navegacion_divs{
         width: 50%;
-        display: flex;
+        @include flex-align-center;
         justify-content: start;
-        align-items: center;
     }
     .navegacion{
-        display: flex;
-        align-items: center;
+        @include flex-align-center;
         justify-content: space-around;
         li{
-            display: flex;
-            align-items: center;
+            @include flex-align-center;
             justify-content: center;
             a{
-                background-color: $verde-claro;
-                border-radius: 5px;
-                box-shadow: 1px 1px 4px $verde-medio;
-                padding: 5px;
+                @include links;
             }
         }
     }

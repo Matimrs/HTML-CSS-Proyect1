@@ -1,10 +1,30 @@
+*{
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+body{
+    background-color: beige;
+}
+main{
+    padding-top: 1vh;
+}
+.section_principal, .div_principal{
+    margin-top: 12vh;
+}
+h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+@mixin fondo-border-margin{
+    margin: 0 auto;
+    background-color: $verde-claro;
+    border-radius: 5px;
+}
 .jugar{
     min-width: 165px;
     width: 20%;
-    margin: 0 auto;
-    background-color: $verde-claro;
+    @include fondo-border-margin;
     padding: 5px 0;
-    border-radius: 5px;
     box-shadow: 1px 1px 4px $verde-medio;
     h2{
         margin: 0;
@@ -33,9 +53,7 @@
 }
 .subir{
     min-width: 60px;
-    margin: 0 auto;
-    background-color: $verde-claro;
-    border-radius: 5px;
+    @include fondo-border-margin;
     width: 10%;
     position: sticky;
     bottom: 0;
@@ -54,13 +72,44 @@
         text-align: justify;
     }
 }
-.izquierda{
+@mixin absolute{
     position: absolute;
     top: -2px;
+}
+.izquierda{
+    @include absolute;
     left: 15px;
 }
 .derecha{
-    position: absolute;
-    top: -2px;
+    @include absolute;
     right: 15px;
+}
+.columnas{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        img{
+            max-width: 300px;
+            border-radius: 15%;
+        }
+    }
+}
+@media (min-width: 840px){
+    .columnas{
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 20px;
+        div{
+            width: 50%;
+            img{
+                max-width: 300px;
+                border-radius: 15%;
+            }
+        }
+    }
 }

@@ -7,22 +7,6 @@
 @import "pages/amigos";
 @import "pages/contacto";
 @import "pages/inicio";
+@import "pages/jugar";
 @import "pages/perfil";
 
-*{
-    font-family: 'Raleway', sans-serif;
-    color: black;
-}
-body{
-    background-color: beige;
-}
-main{
-    padding-top: 1vh;
-}
-.section_principal, .div_principal{
-    margin-top: 12vh;
-}
-h1{
-    font-size: 3rem;
-    font-weight: bold;
-}

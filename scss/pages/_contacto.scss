@@ -7,13 +7,16 @@
 #contacto_email{
    margin-left: 35px !important;
 }
-#contacto_nombre, #contacto_email{
+@mixin border{
     border: 1px solid $verde-medio;
+}
+#contacto_nombre, #contacto_email{
+    @include border;
     width: 170px;
     margin: 2vh;
 }
 #contacto_mensaje{
-    border: 1px solid $verde-medio;
+    @include border;
     width: 100%;
     margin-top: 2vh;
     height: 130px;

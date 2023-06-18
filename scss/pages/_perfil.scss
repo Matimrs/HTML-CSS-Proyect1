@@ -1,7 +1,13 @@
-.perfil{
+@mixin flex-center{
     display: flex;
     justify-content: center;
     align-content: center;
+}
+@mixin font-800{
+    font-weight: 800;
+}
+.perfil{
+    @include flex-center;
 }
 #grid-contenedor-perfil{
     border-radius: 15px;
@@ -11,24 +17,20 @@
     width: 5rem;
 }
 div#nombre1{
-    font-weight: 800;
+    @include font-800;
 }
 div#email1{
-    font-weight: 800;
+    @include font-800;
 }
 div#nivel1{
-    font-weight: 800;
+    @include font-800;
 }
 #imgPerfil{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
 }
 #editar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 800;
+    @include flex-center;
+    @include font-800;
     a{
         text-decoration: none;
         :active, :hover{
