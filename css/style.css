@@ -112,6 +112,9 @@ footer {
         box-shadow: 1px 1px 4px #539b36;
         padding: 5px; } }
 
+html {
+  scroll-behavior: smooth; }
+
 .item-ajustes {
   display: flex;
   flex-direction: column;
